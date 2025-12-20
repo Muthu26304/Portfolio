@@ -3,91 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhatsApp UI Clone</title>
+    <title>Portfolio - Muthu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <div class="header">
-                <div class="avatar"></div>
-                <div class="header-icons">
-                    <i class="fa-solid fa-users"></i>
-                    <i class="fa-solid fa-circle-notch"></i>
-                    <i class="fa-solid fa-message"></i>
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
+<header>
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#About">About me</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contact me</a></li>
+        </ul>
+
+        <button class="btn-orange nav-btn">Hire Me</button>
+    </nav>
+</header>
+    <main class="hero" id="home">
+        <div class="hero-content">
+            <p class="greeting">Hi I am</p>
+            <h2 class="name">Muthu</h2>
+            <h1 class="title">Python <span>developer</span></h1>
+            
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                
             </div>
 
-            <div class="search-bar">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Search or start new chat">
+            <div class="cta-group">
+                <button class="btn-orange">Hire Me</button>
+                <button class="btn-outline">Download CV</button>
             </div>
 
-            <div class="chat-list">
-                <div class="chat-item active">
-                    <div class="avatar"></div>
-                    <div class="chat-info">
-                        <h3>Elon Musk</h3>
-                        <p>I am buying this company now...</p>
-                    </div>
-                    <span>10:30 AM</span>
+            <div class="stats-bar">
+                <div class="stat">
+                    <h3>0+</h3>
+                    <p>Experiences</p>
                 </div>
-                <div class="chat-item">
-                    <div class="avatar"></div>
-                    <div class="chat-info">
-                        <h3>Gemini AI</h3>
-                        <p>I am Gemini, an AI assistant...</p>
-                    </div>
-                    <span>Yesterday</span>
+                <div class="divider"></div>
+                <div class="stat">
+                    <h3>3+</h3>
+                    <p>Project done</p>
                 </div>
-                <div class="chat-item">
-                    <div class="avatar"></div>
-                    <div class="chat-info">
-                        <h3>Coding Group</h3>
-                        <p><i class="fa-solid fa-check-double"></i> What is the next project?</p>
-                    </div>
-                    <span>12/15/25</span>
+                <div class="divider"></div>
+                <div class="stat">
+                    <h3>0+</h3>
+                    <p>Happy Clients</p>
                 </div>
             </div>
         </div>
 
-        <div class="chat-area">
-            <div class="header">
-                <div class="chat-details">
-                    <div class="avatar"></div>
-                    <h3>Elon Musk</h3>
-                    <p>online</p>
-                </div>
-                <div class="header-icons">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
+        <div class="hero-image-area">
+            <div class="circle-crop">
+                <img src="profile.png" alt="Muthu">
+            </div>
+        </div>
+    </main>
+
+ 
+
+<section class="about-section" id="About">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="subtitle">Python Full Stack Developer</p>
+        
+        <div class="content-wrapper">
+            <div class="image-box">
+                <div class="image-bg-circle">
+                    <img src="photo.png" alt="Profile Portrait">
                 </div>
             </div>
 
-            <div class="messages">
-                <div class="message received">
-                    <p>Hello! How can I help you with the rocket launch?</p>
-                    <span>10:29 AM</span>
-                </div>
-                <div class="message sent">
-                    <p>I need the specs for Starship 2.0 ASAP.</p>
-                    <span>10:30 AM <i class="fa-solid fa-check-double"></i></span>
-                </div>
-                <div class="message received">
-                    <p>Understood. Sending it now.</p>
-                    <span>10:31 AM</span>
-                </div>
-            </div>
+            <div class="text-box">
+                <div class="about-nav">
+                    <div class="info-items">
+                        <div class="info" id="education">Eduction</div>
 
-            <div class="message-input">
-                <i class="fa-regular fa-face-smile"></i>
-                <input type="text" placeholder="Type a message">
-                <i class="fa-solid fa-paperclip"></i>
-                <i class="fa-solid fa-microphone"></i>
+                        
+                        <div class="info" id="personal">personal</div>
+                        <div class="personal"></div>
+                    </div>
+                </div>
+
+                <p>
+                  I am a dedicated Full Stack Developer with a passion for building seamless, user-centric digital experiences. My expertise lies in bridging the gap between robust backend logic and intuitive frontend design. I specialize in crafting scalable web applications using Python and SQL, ensuring data integrity and high performance.
+                </p>
+                <p>
+                    On the frontend, I transform complex requirements into elegant, responsive interfaces using Modern JavaScript, Tailwind, and Bootstrap. I believe that clean code and clean design go hand-in-hand, and I strive to build software that is as beautiful on the inside as it is on the outside.
+                </p>
+                
+                <a href="#" class="download-btn">
+                    <span class="icon">⬇</span> Download CV
+                </a>
             </div>
         </div>
     </div>
+</section>
+
+   <section class="services" id="services">
+    <div class="services-header">
+        <h2>Project's</h2>
+        <p>Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam</p>
+    </div>
+
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="service-icon">
+                <img src="github.jpeg"> 
+            </div>
+            <div class="service-card-title">
+                <hr>
+                <h3>Git hub Clone</h3>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <img src="github.jpeg"> 
+            </div>
+            <div class="service-card-title">
+                <hr>
+                <h3>Git hub Clone</h3>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <img src="github.jpeg"> 
+            </div>
+            <div class="service-card-title">
+                <hr>
+                <h3>Git hub Clone</h3>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
 </body>
 </html>
